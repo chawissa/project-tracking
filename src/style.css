@@ -55,7 +55,6 @@ h1 {
 h3 {
   color: var(--grayish-blue);
   font-weight: 400;
-  font-size: 1.8rem;
   letter-spacing: 0.4rem;
 }
 
@@ -73,6 +72,7 @@ img {
 
 p {
   color: var(--dark-grayish-blue);
+  font-size: 2rem;
 }
 
 button {
@@ -91,6 +91,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 2rem;
   margin: 0 auto;
   max-width: 100%;
   width: 120rem;
@@ -132,9 +133,10 @@ ul li.login::before {
   top: 50%;
   left: 0;
   transform: translate(-4rem, -50%);
+  opacity: 0.6;
   border-radius: 10rem;
-  height: 0.6rem;
-  width: 0.6rem;
+  height: 0.5rem;
+  width: 0.5rem;
 }
 
 ul li a {
@@ -163,4 +165,26 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+  }
+
+  .mobile-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .image {
+    transform: scale(1.2) translateX(7%);
+  }
 }
