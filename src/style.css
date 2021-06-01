@@ -71,7 +71,7 @@ nav {
   z-index: 1;
 }
 
-.main-nav {
+.nav--mobile .main-nav {
   list-style: none;
   text-align: center;
 }
